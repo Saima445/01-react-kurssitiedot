@@ -21,11 +21,10 @@ const Content = (props) => {
 };
 
 const Part = (props) => {
+  let output = `${props.part} ${props.exercises}`;
   return (
     <section>
-      <p>
-        {props.part} {props.exercises}
-      </p>
+      <p>{output}</p>
     </section>
   );
 };
@@ -34,14 +33,13 @@ const Total = (props) => {
   console.log(
     `Totalin propsit: ${props.parts[0].exercises} ${props.parts[1].exercises} ${props.parts[2].exercises}`
   );
+  const sum =
+    props.parts[0].exercises +
+    props.parts[1].exercises +
+    props.parts[2].exercises;
   return (
     <section>
-      <p>
-        Number of exercises{" "}
-        {props.parts[0].exercises +
-          props.parts[1].exercises +
-          props.parts[2].exercises}
-      </p>
+      <p>Number of exercises {sum}</p>
     </section>
   );
 };
