@@ -34,7 +34,7 @@ const Total = (props) => {
   console.log("Päivää TOTAL komponentista");
   return (
     <section>
-      <p>Number of exercises {props.part1 + props.part2 + props.part3}</p>
+      <p>Number of exercises {props.part1E + props.part2E + props.part3E}</p>
     </section>
   );
 };
